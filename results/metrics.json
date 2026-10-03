@@ -1,0 +1,115 @@
+{
+  "dvt_upper_bound_test_coverage": 0.9569122807017544,
+  "fail_auc": 0.9804932782602052,
+  "fail_brier": 0.04099930709197306,
+  "permutation_importance": {
+    "log_diode": 0.2268,
+    "log_ar": 0.1449,
+    "tox_nm": 0.0375,
+    "log_pr": 0.0297,
+    "log_gate": 0.0135,
+    "layer_code": 0.0058,
+    "radius_mm": 0.0035
+  },
+  "rules": {
+    "reference_structure_full_data": {
+      "conventional": {
+        "unsafe_rate": 0.0,
+        "median_ratio_to_truth": 0.646
+      },
+      "ml_prob": {
+        "unsafe_rate": 0.042,
+        "median_ratio_to_truth": 0.631
+      },
+      "ml_guaranteed": {
+        "unsafe_rate": 0.0,
+        "median_ratio_to_truth": 0.126
+      }
+    },
+    "data_budget": [
+      {
+        "n_dies": 3,
+        "method": "conventional",
+        "unsafe_rate": 0.488,
+        "median_ratio_to_truth": 1.117
+      },
+      {
+        "n_dies": 3,
+        "method": "ml_prob",
+        "unsafe_rate": 0.294,
+        "median_ratio_to_truth": 0.847
+      },
+      {
+        "n_dies": 6,
+        "method": "conventional",
+        "unsafe_rate": 0.315,
+        "median_ratio_to_truth": 0.885
+      },
+      {
+        "n_dies": 6,
+        "method": "ml_prob",
+        "unsafe_rate": 0.181,
+        "median_ratio_to_truth": 0.749
+      },
+      {
+        "n_dies": 12,
+        "method": "conventional",
+        "unsafe_rate": 0.187,
+        "median_ratio_to_truth": 0.797
+      },
+      {
+        "n_dies": 12,
+        "method": "ml_prob",
+        "unsafe_rate": 0.133,
+        "median_ratio_to_truth": 0.719
+      },
+      {
+        "n_dies": 25,
+        "method": "conventional",
+        "unsafe_rate": 0.192,
+        "median_ratio_to_truth": 0.794
+      },
+      {
+        "n_dies": 25,
+        "method": "ml_prob",
+        "unsafe_rate": 0.186,
+        "median_ratio_to_truth": 0.794
+      }
+    ],
+    "unswept_structures": {
+      "comb_1um2_gate": {
+        "ml_prob": {
+          "unsafe_rate": 0.066,
+          "median_ratio_to_truth": 0.541
+        },
+        "ml_guaranteed": {
+          "unsafe_rate": 0.0,
+          "median_ratio_to_truth": 0.079
+        },
+        "truth_defined_share": 1.0
+      },
+      "plate_4um2_gate": {
+        "ml_prob": {
+          "unsafe_rate": 0.169,
+          "median_ratio_to_truth": 0.736
+        },
+        "ml_guaranteed": {
+          "unsafe_rate": 0.014,
+          "median_ratio_to_truth": 0.293
+        },
+        "truth_defined_share": 1.0
+      },
+      "comb_0p2um2_gate": {
+        "ml_prob": {
+          "unsafe_rate": 0.946,
+          "median_ratio_to_truth": 52.118
+        },
+        "ml_guaranteed": {
+          "unsafe_rate": 1.0,
+          "median_ratio_to_truth": 27.08
+        },
+        "truth_defined_share": 0.819
+      }
+    }
+  }
+}

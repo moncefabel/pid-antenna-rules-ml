@@ -1,0 +1,46 @@
+|--- log10_AR <= 3.48
+|   |--- diode_um2 <= 0.10
+|   |   |--- log10_AR <= 2.64
+|   |   |   |--- tox_nm <= 5.25
+|   |   |   |   |--- class: False
+|   |   |   |--- tox_nm >  5.25
+|   |   |   |   |--- class: False
+|   |   |--- log10_AR >  2.64
+|   |   |   |--- tox_nm <= 2.65
+|   |   |   |   |--- class: False
+|   |   |   |--- tox_nm >  2.65
+|   |   |   |   |--- class: True
+|   |--- diode_um2 >  0.10
+|   |   |--- log10_AR <= 2.76
+|   |   |   |--- diode_um2 <= 0.60
+|   |   |   |   |--- class: False
+|   |   |   |--- diode_um2 >  0.60
+|   |   |   |   |--- class: False
+|   |   |--- log10_AR >  2.76
+|   |   |   |--- log10_AR <= 2.80
+|   |   |   |   |--- class: False
+|   |   |   |--- log10_AR >  2.80
+|   |   |   |   |--- class: False
+|--- log10_AR >  3.48
+|   |--- diode_um2 <= 2.50
+|   |   |--- log10_AR <= 3.83
+|   |   |   |--- diode_um2 <= 0.60
+|   |   |   |   |--- class: True
+|   |   |   |--- diode_um2 >  0.60
+|   |   |   |   |--- class: False
+|   |   |--- log10_AR >  3.83
+|   |   |   |--- diode_um2 <= 0.60
+|   |   |   |   |--- class: True
+|   |   |   |--- diode_um2 >  0.60
+|   |   |   |   |--- class: True
+|   |--- diode_um2 >  2.50
+|   |   |--- log10_AR <= 4.18
+|   |   |   |--- log10_AR <= 3.75
+|   |   |   |   |--- class: False
+|   |   |   |--- log10_AR >  3.75
+|   |   |   |   |--- class: False
+|   |   |--- log10_AR >  4.18
+|   |   |   |--- tox_nm <= 5.25
+|   |   |   |   |--- class: True
+|   |   |   |--- tox_nm >  5.25
+|   |   |   |   |--- class: False
